@@ -2,7 +2,9 @@ import unittest
 import prob_calculator
 
 prob_calculator.random.seed(95)
+
 class UnitTests(unittest.TestCase):
+
     def test_hat_class_contents(self):
         hat = prob_calculator.Hat(red=3,blue=2)
         actual = hat.contents

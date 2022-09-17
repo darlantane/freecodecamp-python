@@ -11,7 +11,7 @@ def __repr__(self):
         # format description and amount
         line_description = "{:<23}".format(item["description"])
         line_amount = "{:>7.2f}".format(item["amount"])
-        # Truncate ledger description and amount to 23 and 7 characters respectively
+
         ledger += "{}{}\n".format(line_description[:23], line_amount[:7])
     total = "Total: {:.2f}".format(self.__balance)
     return header + ledger + total
